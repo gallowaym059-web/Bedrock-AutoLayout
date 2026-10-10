@@ -1,0 +1,92 @@
+{
+  "geode": "5.11.0",
+  "gd": {
+    "win": "2.2081",
+    "mac": "2.2081",
+    "android": "2.2081",
+    "ios": "2.2081"
+  },
+  "id": "layoutworks.layoutmaker",
+  "name": "Auto Layout Maker",
+  "version": "1.0.3",
+  "developer": "Layout Maker",
+  "description": "Build a short spawn-relative platform from selected solid-block frequencies, with a clear approach and no hazards.",
+  "tags": [
+    "editor",
+    "offline",
+    "utility"
+  ],
+  "settings": {
+    "rating-title": {
+      "type": "title",
+      "name": "Pattern Profile",
+      "description": "Choose the generated route length. This does not assign stars or change gameplay difficulty."
+    },
+    "rating": {
+      "type": "string",
+      "name": "Layout Rating",
+      "description": "Auto estimates route length from the selected layout. V2 leaves an open run-up, then builds short one-block-high platform sections over continuous ground; no hazards, portals, orbs, triggers, or ground gaps are generated.",
+      "default": "Auto",
+      "one-of": [
+        "Auto",
+        "Easy",
+        "Normal",
+        "Hard",
+        "Harder",
+        "Insane",
+        "Easy Demon",
+        "Medium Demon",
+        "Hard Demon",
+        "Insane Demon",
+        "Extreme Demon"
+      ]
+    },
+    "filter-title": {
+      "type": "title",
+      "name": "Exclude From Analysis",
+      "description": "These filters affect scan totals and Auto route-length analysis. V2 only uses ordinary 30 x 30 solid blocks."
+    },
+    "exclude-gamemodes": {
+      "type": "bool",
+      "name": "Exclude Gamemode Portals",
+      "description": "Exclude portals from scan and Auto analysis. V2 omits portals in every profile.",
+      "default": false
+    },
+    "exclude-blocks": {
+      "type": "bool",
+      "name": "Exclude Blocks and Slopes",
+      "description": "Ordinary 30 x 30 solid blocks are the frequency samples used to build V2. Excluding them prevents V2 generation.",
+      "default": false
+    },
+    "exclude-hazards": {
+      "type": "bool",
+      "name": "Exclude Hazards",
+      "description": "Exclude hazards from scan and Auto analysis. V2 omits hazards in every profile.",
+      "default": false
+    },
+    "exclude-pickups": {
+      "type": "bool",
+      "name": "Exclude Orbs, Pads, and Collectibles",
+      "description": "Exclude orbs, pads, and collectibles from scan and Auto analysis. V2 omits them in every profile.",
+      "default": false
+    },
+    "exclude-triggers": {
+      "type": "bool",
+      "name": "Exclude Triggers",
+      "description": "Exclude triggers from scan and Auto analysis. V2 omits triggers in every profile.",
+      "default": true
+    },
+    "exclude-decoration": {
+      "type": "bool",
+      "name": "Exclude Decoration",
+      "description": "Exclude decoration from scan and Auto analysis.",
+      "default": false
+    },
+    "exclude-other": {
+      "type": "bool",
+      "name": "Exclude Other Objects",
+      "description": "Exclude miscellaneous objects from scan and Auto analysis. V2 does not generate them.",
+      "default": false
+    }
+  }
+}
